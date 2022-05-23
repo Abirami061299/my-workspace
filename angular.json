@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ordinal-suffix-pipe": {
+      "projectType": "library",
+      "root": "projects/ordinal-suffix-pipe",
+      "sourceRoot": "projects/ordinal-suffix-pipe/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ordinal-suffix-pipe/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ordinal-suffix-pipe/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ordinal-suffix-pipe/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ordinal-suffix-pipe/src/test.ts",
+            "tsConfig": "projects/ordinal-suffix-pipe/tsconfig.spec.json",
+            "karmaConfig": "projects/ordinal-suffix-pipe/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ordinal-suffix-pipe"
 }
