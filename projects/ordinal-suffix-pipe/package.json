@@ -1,6 +1,6 @@
 {
   "name": "ordinal-suffix-pipe",
-  "version": "6.2.0",
+  "version": "6.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Abirami061299/my-workspace"
@@ -14,8 +14,8 @@
   },
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
-    "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0"
+    "@angular/common": "~9.0.3",
+    "@angular/compiler": "~9.0.3"
   },
   "dependencies": {
     "tslib": "^2.3.0"
