@@ -21,6 +21,6 @@ export class OrdinalPipe implements PipeTransform {
     } else {
       suffix = 'th';
     }
-    return value + suffix;
+    return suffix;
   }
 }
